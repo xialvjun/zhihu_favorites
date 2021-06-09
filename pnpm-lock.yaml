@@ -2,15 +2,15 @@ lockfileVersion: 5.3
 
 specifiers:
   '@types/better-sqlite3': ^5.4.1
+  axios: ^0.21.1
   better-sqlite3: ^7.1.5
-  cheerio: ^1.0.0-rc.6
-  got: ^11.8.2
+  cheerio: ^1.0.0-rc.10
   puppeteer-core: ^9.0.0
 
 dependencies:
+  axios: 0.21.1
   better-sqlite3: 7.1.5
-  cheerio: 1.0.0-rc.6
-  got: 11.8.2
+  cheerio: registry.nlark.com/cheerio/1.0.0-rc.10
   puppeteer-core: 9.0.0
 
 devDependencies:
@@ -18,56 +18,20 @@ devDependencies:
 
 packages:
 
-  /@sindresorhus/is/4.0.1:
-    resolution: {integrity: sha512-Qm9hBEBu18wt1PO2flE7LPb30BHMQt1eQgbV76YntdNk73XZGpn3izvGTYxbGgzXKgbCjiia0uxTd3aTNQrY/g==}
-    engines: {node: '>=10'}
-    dev: false
-
-  /@szmarczak/http-timer/4.0.5:
-    resolution: {integrity: sha512-PyRA9sm1Yayuj5OIoJ1hGt2YISX45w9WcFbh6ddT0Z/0yaFxOtGLInr4jUfU1EAFVs0Yfyfev4RNwBlUaHdlDQ==}
-    engines: {node: '>=10'}
-    dependencies:
-      defer-to-connect: 2.0.1
-    dev: false
-
   /@types/better-sqlite3/5.4.1:
     resolution: {integrity: sha512-8hje3Rhsg/9veTkALfCwiWn7VMrP1QDwHhBSgerttYPABEvrHsMQnU9dlqoM6QX3x4uw3Y06dDVz8uDQo1J4Ng==}
     dependencies:
       '@types/integer': 1.0.1
     dev: true
 
-  /@types/cacheable-request/6.0.1:
-    resolution: {integrity: sha512-ykFq2zmBGOCbpIXtoVbz4SKY5QriWPh3AjyU4G74RYbtt5yOc5OfaY75ftjg7mikMOla1CTGpX3lLbuJh8DTrQ==}
-    dependencies:
-      '@types/http-cache-semantics': 4.0.0
-      '@types/keyv': 3.1.1
-      '@types/node': 15.0.1
-      '@types/responselike': 1.0.0
-    dev: false
-
-  /@types/http-cache-semantics/4.0.0:
-    resolution: {integrity: sha512-c3Xy026kOF7QOTn00hbIllV1dLR9hG9NkSrLQgCVs8NF6sBU+VGWjD3wLPhmh1TYAc7ugCFsvHYMN4VcBN1U1A==}
-    dev: false
-
   /@types/integer/1.0.1:
     resolution: {integrity: sha512-DmZDpSVnsuBrOhtHwE1oKmUJ3qVjHhhNQ7WnZy9/RhH3A24Ar+9o4SoaCWcTzQhalpRDIAMsfdoZLWNJtdBR7A==}
     dev: true
 
-  /@types/keyv/3.1.1:
-    resolution: {integrity: sha512-MPtoySlAZQ37VoLaPcTHCu1RWJ4llDkULYZIzOYxlhxBqYPB0RsRlmMU0R6tahtFe27mIdkHV+551ZWV4PLmVw==}
-    dependencies:
-      '@types/node': 15.0.1
-    dev: false
-
   /@types/node/15.0.1:
     resolution: {integrity: sha512-TMkXt0Ck1y0KKsGr9gJtWGjttxlZnnvDtphxUOSd0bfaR6Q1jle+sPvrzNR1urqYTWMinoKvjKfXUGsumaO1PA==}
     dev: false
-
-  /@types/responselike/1.0.0:
-    resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
-    dependencies:
-      '@types/node': 15.0.1
-    dev: false
+    optional: true
 
   /@types/yauzl/2.9.1:
     resolution: {integrity: sha512-A1b8SU4D10uoPjwb0lnHmmu8wZhR9d+9o2PKBQT2jU5YPTKsxac6M2qGAdY7VcL+dHHhARVUDmeg0rOrcd9EjA==}
@@ -101,6 +65,12 @@ packages:
       readable-stream: 2.3.7
     dev: false
 
+  /axios/0.21.1:
+    resolution: {integrity: sha1-IlY0gZYvTWvemnbVFu8OXTwJsrg=, tarball: axios/download/axios-0.21.1.tgz?cache=0&sync_timestamp=1616074229990&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.21.1.tgz}
+    dependencies:
+      follow-redirects: registry.nlark.com/follow-redirects/1.14.1
+    dev: false
+
   /balanced-match/1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: false
@@ -132,10 +102,6 @@ packages:
       readable-stream: 3.6.0
     dev: false
 
-  /boolbase/1.0.0:
-    resolution: {integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=}
-    dev: false
-
   /brace-expansion/1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
     dependencies:
@@ -154,46 +120,6 @@ packages:
       ieee754: 1.2.1
     dev: false
 
-  /cacheable-lookup/5.0.4:
-    resolution: {integrity: sha512-2/kNscPhpcxrOigMZzbiWF7dz8ilhb/nIHU3EyZiXWXpeq/au8qJ8VhdftMkty3n7Gj6HIGalQG8oiBNB3AJgA==}
-    engines: {node: '>=10.6.0'}
-    dev: false
-
-  /cacheable-request/7.0.1:
-    resolution: {integrity: sha512-lt0mJ6YAnsrBErpTMWeu5kl/tg9xMAWjavYTN6VQXM1A/teBITuNcccXsCxF0tDQQJf9DfAaX5O4e0zp0KlfZw==}
-    engines: {node: '>=8'}
-    dependencies:
-      clone-response: 1.0.2
-      get-stream: 5.2.0
-      http-cache-semantics: 4.1.0
-      keyv: 4.0.3
-      lowercase-keys: 2.0.0
-      normalize-url: 4.5.0
-      responselike: 2.0.0
-    dev: false
-
-  /cheerio-select/1.4.0:
-    resolution: {integrity: sha512-sobR3Yqz27L553Qa7cK6rtJlMDbiKPdNywtR95Sj/YgfpLfy0u6CGJuaBKe5YE/vTc23SCRKxWSdlon/w6I/Ew==}
-    dependencies:
-      css-select: 4.1.2
-      css-what: 5.0.0
-      domelementtype: 2.2.0
-      domhandler: 4.2.0
-      domutils: 2.6.0
-    dev: false
-
-  /cheerio/1.0.0-rc.6:
-    resolution: {integrity: sha512-hjx1XE1M/D5pAtMgvWwE21QClmAEeGHOIDfycgmndisdNgI6PE1cGRQkMGBcsbUbmEQyWu5PJLUcAOjtQS8DWw==}
-    engines: {node: '>= 0.12'}
-    dependencies:
-      cheerio-select: 1.4.0
-      dom-serializer: 1.3.1
-      domhandler: 4.2.0
-      htmlparser2: 6.1.0
-      parse5: 6.0.1
-      parse5-htmlparser2-tree-adapter: 6.0.1
-    dev: false
-
   /chownr/1.1.4:
     resolution: {integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==}
     dev: false
@@ -201,12 +127,6 @@ packages:
   /chownr/2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
-    dev: false
-
-  /clone-response/1.0.2:
-    resolution: {integrity: sha1-0dyXOSAxTfZ/vrlCI7TuNQI56Ws=}
-    dependencies:
-      mimic-response: 1.0.1
     dev: false
 
   /code-point-at/1.1.0:
@@ -224,21 +144,6 @@ packages:
 
   /core-util-is/1.0.2:
     resolution: {integrity: sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=}
-    dev: false
-
-  /css-select/4.1.2:
-    resolution: {integrity: sha512-nu5ye2Hg/4ISq4XqdLY2bEatAcLIdt3OYGFc9Tm9n7VSlFBcfRv0gBNksHRgSdUDQGtN3XrZ94ztW+NfzkFSUw==}
-    dependencies:
-      boolbase: 1.0.0
-      css-what: 5.0.0
-      domhandler: 4.2.0
-      domutils: 2.6.0
-      nth-check: 2.0.0
-    dev: false
-
-  /css-what/5.0.0:
-    resolution: {integrity: sha512-qxyKHQvgKwzwDWC/rGbT821eJalfupxYW2qbSJSAtdSTimsr/MlaGONoNLllaUPZWf8QnbcKM/kPVYUQuEKAFA==}
-    engines: {node: '>= 6'}
     dev: false
 
   /debug/4.3.1:
@@ -260,21 +165,9 @@ packages:
       mimic-response: 2.1.0
     dev: false
 
-  /decompress-response/6.0.0:
-    resolution: {integrity: sha512-aW35yZM6Bb/4oJlZncMH2LCoZtJXTRxES17vE3hoRiowU2kWHaJKFkSBDnDR+cm9J+9QhXmREyIfv0pji9ejCQ==}
-    engines: {node: '>=10'}
-    dependencies:
-      mimic-response: 3.1.0
-    dev: false
-
   /deep-extend/0.6.0:
     resolution: {integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==}
     engines: {node: '>=4.0.0'}
-    dev: false
-
-  /defer-to-connect/2.0.1:
-    resolution: {integrity: sha512-4tvttepXG1VaYGrRibk5EwJd1t4udunSOVMdLSAL6mId1ix438oPwPZMALY41FCijukO1L0twNcGsdzS7dHgDg==}
-    engines: {node: '>=10'}
     dev: false
 
   /delegates/1.0.0:
@@ -291,41 +184,21 @@ packages:
     resolution: {integrity: sha512-VvlVYY+VDJe639yHs5PHISzdWTLL3Aw8rO4cvUtwvoxFd6FHbE4OpHHcde52M6096uYYazAmd4l0o5VuFRO2WA==}
     dev: false
 
-  /dom-serializer/1.3.1:
-    resolution: {integrity: sha512-Pv2ZluG5ife96udGgEDovOOOA5UELkltfJpnIExPrAk1LTvecolUGn6lIaoLh86d83GiB86CjzciMd9BuRB71Q==}
-    dependencies:
-      domelementtype: 2.2.0
-      domhandler: 4.2.0
-      entities: 2.2.0
-    dev: false
-
   /domelementtype/2.2.0:
-    resolution: {integrity: sha512-DtBMo82pv1dFtUmHyr48beiuq792Sxohr+8Hm9zoxklYPfa6n0Z3Byjj2IV7bmr2IyqClnqEQhfgHJJ5QF0R5A==}
+    resolution: {integrity: sha1-mgtsJ4LtahxzI9QiZxg9+b2LHVc=, tarball: domelementtype/download/domelementtype-2.2.0.tgz}
     dev: false
 
   /domhandler/4.2.0:
-    resolution: {integrity: sha512-zk7sgt970kzPks2Bf+dwT/PLzghLnsivb9CcxkvR8Mzr66Olr0Ofd8neSbglHJHaHa2MadfoSdNlKYAaafmWfA==}
+    resolution: {integrity: sha1-+XaKXwNL5gqJonwuTQ9066DYsFk=, tarball: domhandler/download/domhandler-4.2.0.tgz?cache=0&sync_timestamp=1618565946556&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomhandler%2Fdownload%2Fdomhandler-4.2.0.tgz}
     engines: {node: '>= 4'}
     dependencies:
       domelementtype: 2.2.0
-    dev: false
-
-  /domutils/2.6.0:
-    resolution: {integrity: sha512-y0BezHuy4MDYxh6OvolXYsH+1EMGmFbwv5FKW7ovwMG6zTPWqNPq3WF9ayZssFq+UlKdffGLbOEaghNdaOm1WA==}
-    dependencies:
-      dom-serializer: 1.3.1
-      domelementtype: 2.2.0
-      domhandler: 4.2.0
     dev: false
 
   /end-of-stream/1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
     dependencies:
       once: 1.4.0
-    dev: false
-
-  /entities/2.2.0:
-    resolution: {integrity: sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==}
     dev: false
 
   /expand-template/2.0.3:
@@ -415,46 +288,8 @@ packages:
       path-is-absolute: 1.0.1
     dev: false
 
-  /got/11.8.2:
-    resolution: {integrity: sha512-D0QywKgIe30ODs+fm8wMZiAcZjypcCodPNuMz5H9Mny7RJ+IjJ10BdmGW7OM7fHXP+O7r6ZwapQ/YQmMSvB0UQ==}
-    engines: {node: '>=10.19.0'}
-    dependencies:
-      '@sindresorhus/is': 4.0.1
-      '@szmarczak/http-timer': 4.0.5
-      '@types/cacheable-request': 6.0.1
-      '@types/responselike': 1.0.0
-      cacheable-lookup: 5.0.4
-      cacheable-request: 7.0.1
-      decompress-response: 6.0.0
-      http2-wrapper: 1.0.3
-      lowercase-keys: 2.0.0
-      p-cancelable: 2.1.0
-      responselike: 2.0.0
-    dev: false
-
   /has-unicode/2.0.1:
     resolution: {integrity: sha1-4Ob+aijPUROIVeCG0Wkedx3iqLk=}
-    dev: false
-
-  /htmlparser2/6.1.0:
-    resolution: {integrity: sha512-gyyPk6rgonLFEDGoeRgQNaEUvdJ4ktTmmUh/h2t7s+M8oPpIPxgNACWa+6ESR57kXstwqPiCut0V8NRpcwgU7A==}
-    dependencies:
-      domelementtype: 2.2.0
-      domhandler: 4.2.0
-      domutils: 2.6.0
-      entities: 2.2.0
-    dev: false
-
-  /http-cache-semantics/4.1.0:
-    resolution: {integrity: sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==}
-    dev: false
-
-  /http2-wrapper/1.0.3:
-    resolution: {integrity: sha512-V+23sDMr12Wnz7iTcDeJr3O6AIxlnvT/bmaAAAP/Xda35C90p9599p0F1eHR/N1KILWSoWVAiOMFjBBXaXSMxg==}
-    engines: {node: '>=10.19.0'}
-    dependencies:
-      quick-lru: 5.1.1
-      resolve-alpn: 1.1.2
     dev: false
 
   /https-proxy-agent/5.0.0:
@@ -497,16 +332,6 @@ packages:
     resolution: {integrity: sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=}
     dev: false
 
-  /json-buffer/3.0.1:
-    resolution: {integrity: sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==}
-    dev: false
-
-  /keyv/4.0.3:
-    resolution: {integrity: sha512-zdGa2TOpSZPq5mU6iowDARnMBZgtCqJ11dJROFi6tg6kTn4nuUdU09lFyLFSaHrWqpIJ+EBq4E8/Dc0Vx5vLdA==}
-    dependencies:
-      json-buffer: 3.0.1
-    dev: false
-
   /locate-path/5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
     engines: {node: '>=8'}
@@ -514,24 +339,9 @@ packages:
       p-locate: 4.1.0
     dev: false
 
-  /lowercase-keys/2.0.0:
-    resolution: {integrity: sha512-tqNXrS78oMOE73NMxK4EMLQsQowWf8jKooH9g7xPavRT706R6bkQJ6DY2Te7QukaZsulxa30wQ7bk0pm4XiHmA==}
-    engines: {node: '>=8'}
-    dev: false
-
-  /mimic-response/1.0.1:
-    resolution: {integrity: sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNETOoWEimndZ4QK0RHxuxQ==}
-    engines: {node: '>=4'}
-    dev: false
-
   /mimic-response/2.1.0:
     resolution: {integrity: sha512-wXqjST+SLt7R009ySCglWBCFpjUygmCIfD790/kVbiGmUgfYGuB14PiTd5DwVxSV4NcYHjzMkoj5LjQZwTQLEA==}
     engines: {node: '>=8'}
-    dev: false
-
-  /mimic-response/3.1.0:
-    resolution: {integrity: sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ==}
-    engines: {node: '>=10'}
     dev: false
 
   /minimatch/3.0.4:
@@ -592,11 +402,6 @@ packages:
     resolution: {integrity: sha1-lKKxYzxPExdVMAfYlm/Q6EG2pMI=}
     dev: false
 
-  /normalize-url/4.5.0:
-    resolution: {integrity: sha512-2s47yzUxdexf1OhyRi4Em83iQk0aPvwTddtFz4hnSSw9dCEsLEGf6SwIO8ss/19S9iBb5sJaOuTvTGDeZI00BQ==}
-    engines: {node: '>=8'}
-    dev: false
-
   /npmlog/4.1.2:
     resolution: {integrity: sha512-2uUqazuKlTaSI/dC8AzicUck7+IrEaOnN/e0jd3Xtt1KcGpwx30v50mL7oPyr/h9bL3E4aZccVwpwP+5W9Vjkg==}
     dependencies:
@@ -604,12 +409,6 @@ packages:
       console-control-strings: 1.1.0
       gauge: 2.7.4
       set-blocking: 2.0.0
-    dev: false
-
-  /nth-check/2.0.0:
-    resolution: {integrity: sha512-i4sc/Kj8htBrAiH1viZ0TgU8Y5XqCaV/FziYK6TBczxmeKm3AEFWqqF3195yKudrarqy7Zu80Ra5dobFjn9X/Q==}
-    dependencies:
-      boolbase: 1.0.0
     dev: false
 
   /number-is-nan/1.0.1:
@@ -626,11 +425,6 @@ packages:
     resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
     dependencies:
       wrappy: 1.0.2
-    dev: false
-
-  /p-cancelable/2.1.0:
-    resolution: {integrity: sha512-HAZyB3ZodPo+BDpb4/Iu7Jv4P6cSazBz9ZM0ChhEXp70scx834aWCEjQRwgt41UzzejUAPdbqqONfRWTPYrPAQ==}
-    engines: {node: '>=8'}
     dev: false
 
   /p-limit/2.3.0:
@@ -650,16 +444,6 @@ packages:
   /p-try/2.2.0:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
-    dev: false
-
-  /parse5-htmlparser2-tree-adapter/6.0.1:
-    resolution: {integrity: sha512-qPuWvbLgvDGilKc5BoicRovlT4MtYT6JfJyBOMDsKoiT+GiuP5qyrPCnR9HcPECIJJmZh5jRndyNThnhhb/vlA==}
-    dependencies:
-      parse5: 6.0.1
-    dev: false
-
-  /parse5/6.0.1:
-    resolution: {integrity: sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==}
     dev: false
 
   /path-exists/4.0.0:
@@ -746,11 +530,6 @@ packages:
       - utf-8-validate
     dev: false
 
-  /quick-lru/5.1.1:
-    resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
-    engines: {node: '>=10'}
-    dev: false
-
   /rc/1.2.8:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
@@ -780,16 +559,6 @@ packages:
       inherits: 2.0.4
       string_decoder: 1.3.0
       util-deprecate: 1.0.2
-    dev: false
-
-  /resolve-alpn/1.1.2:
-    resolution: {integrity: sha512-8OyfzhAtA32LVUsJSke3auIyINcwdh5l3cvYKdKO0nvsYSKuiLfTM5i78PJswFPT8y6cPW+L1v6/hE95chcpDA==}
-    dev: false
-
-  /responselike/2.0.0:
-    resolution: {integrity: sha512-xH48u3FTB9VsZw7R+vvgaKeLKzT6jOogbQhEe/jewwnZgzPcnyWui2Av6JpoYZF/91uueC+lqhWqeURw5/qhCw==}
-    dependencies:
-      lowercase-keys: 2.0.0
     dev: false
 
   /rimraf/3.0.2:
@@ -901,6 +670,10 @@ packages:
     resolution: {integrity: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=}
     dev: false
 
+  /tslib/2.2.0:
+    resolution: {integrity: sha1-+yxHWXfjXiQTEe3iaTzuHsZpj1w=, tarball: tslib/download/tslib-2.2.0.tgz?cache=0&sync_timestamp=1617671769197&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftslib%2Fdownload%2Ftslib-2.2.0.tgz}
+    dev: false
+
   /tunnel-agent/0.6.0:
     resolution: {integrity: sha1-J6XeoGs2sEoKmWZ3SykIaPD8QP0=}
     dependencies:
@@ -950,4 +723,122 @@ packages:
     dependencies:
       buffer-crc32: 0.2.13
       fd-slicer: 1.1.0
+    dev: false
+
+  registry.nlark.com/boolbase/1.0.0:
+    resolution: {integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/boolbase/download/boolbase-1.0.0.tgz}
+    name: boolbase
+    version: 1.0.0
+    dev: false
+
+  registry.nlark.com/cheerio-select/1.5.0:
+    resolution: {integrity: sha1-+vPa6zGxfF4anavO4oiq+Kr6WCM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/cheerio-select/download/cheerio-select-1.5.0.tgz}
+    name: cheerio-select
+    version: 1.5.0
+    dependencies:
+      css-select: registry.nlark.com/css-select/4.1.3
+      css-what: registry.nlark.com/css-what/5.0.1
+      domelementtype: 2.2.0
+      domhandler: 4.2.0
+      domutils: registry.nlark.com/domutils/2.7.0
+    dev: false
+
+  registry.nlark.com/cheerio/1.0.0-rc.10:
+    resolution: {integrity: sha1-K6Pc38wm55VvwfRA5h1RxkM3nz4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/cheerio/download/cheerio-1.0.0-rc.10.tgz?cache=0&sync_timestamp=1623173267546&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcheerio%2Fdownload%2Fcheerio-1.0.0-rc.10.tgz}
+    name: cheerio
+    version: 1.0.0-rc.10
+    engines: {node: '>= 6'}
+    dependencies:
+      cheerio-select: registry.nlark.com/cheerio-select/1.5.0
+      dom-serializer: registry.nlark.com/dom-serializer/1.3.2
+      domhandler: 4.2.0
+      htmlparser2: registry.nlark.com/htmlparser2/6.1.0
+      parse5: registry.nlark.com/parse5/6.0.1
+      parse5-htmlparser2-tree-adapter: registry.nlark.com/parse5-htmlparser2-tree-adapter/6.0.1
+      tslib: 2.2.0
+    dev: false
+
+  registry.nlark.com/css-select/4.1.3:
+    resolution: {integrity: sha1-pwRA9wMX8maRGK10/xBeZYSccGc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/css-select/download/css-select-4.1.3.tgz}
+    name: css-select
+    version: 4.1.3
+    dependencies:
+      boolbase: registry.nlark.com/boolbase/1.0.0
+      css-what: registry.nlark.com/css-what/5.0.1
+      domhandler: 4.2.0
+      domutils: registry.nlark.com/domutils/2.7.0
+      nth-check: registry.nlark.com/nth-check/2.0.0
+    dev: false
+
+  registry.nlark.com/css-what/5.0.1:
+    resolution: {integrity: sha1-PvqCATH0ZpqKwkCPnDLnx96fTK0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/css-what/download/css-what-5.0.1.tgz}
+    name: css-what
+    version: 5.0.1
+    engines: {node: '>= 6'}
+    dev: false
+
+  registry.nlark.com/dom-serializer/1.3.2:
+    resolution: {integrity: sha1-YgZDfTLO767HFhgDIwx6ILwbTZE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/dom-serializer/download/dom-serializer-1.3.2.tgz}
+    name: dom-serializer
+    version: 1.3.2
+    dependencies:
+      domelementtype: 2.2.0
+      domhandler: 4.2.0
+      entities: registry.nlark.com/entities/2.2.0
+    dev: false
+
+  registry.nlark.com/domutils/2.7.0:
+    resolution: {integrity: sha1-jrrwxB66/PVbC3LsMcVjI3EsVEI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/domutils/download/domutils-2.7.0.tgz}
+    name: domutils
+    version: 2.7.0
+    dependencies:
+      dom-serializer: registry.nlark.com/dom-serializer/1.3.2
+      domelementtype: 2.2.0
+      domhandler: 4.2.0
+    dev: false
+
+  registry.nlark.com/entities/2.2.0:
+    resolution: {integrity: sha1-CY3JDruD2N/6CJ1VJWs1HTTE2lU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/entities/download/entities-2.2.0.tgz}
+    name: entities
+    version: 2.2.0
+    dev: false
+
+  registry.nlark.com/follow-redirects/1.14.1:
+    resolution: {integrity: sha1-2RFN7Qoc/dM04WTmZirQK/2R/0M=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/follow-redirects/download/follow-redirects-1.14.1.tgz}
+    name: follow-redirects
+    version: 1.14.1
+    engines: {node: '>=4.0'}
+    dev: false
+
+  registry.nlark.com/htmlparser2/6.1.0:
+    resolution: {integrity: sha1-xNditsM3GgXb5l6UrkOp+EX7j7c=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/htmlparser2/download/htmlparser2-6.1.0.tgz}
+    name: htmlparser2
+    version: 6.1.0
+    dependencies:
+      domelementtype: 2.2.0
+      domhandler: 4.2.0
+      domutils: registry.nlark.com/domutils/2.7.0
+      entities: registry.nlark.com/entities/2.2.0
+    dev: false
+
+  registry.nlark.com/nth-check/2.0.0:
+    resolution: {integrity: sha1-G7T22scAcvwxPoyc0UF7UHTAoSU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/nth-check/download/nth-check-2.0.0.tgz}
+    name: nth-check
+    version: 2.0.0
+    dependencies:
+      boolbase: registry.nlark.com/boolbase/1.0.0
+    dev: false
+
+  registry.nlark.com/parse5-htmlparser2-tree-adapter/6.0.1:
+    resolution: {integrity: sha1-LN+a2CMyEUA3DU2/XT6Sx8jdxuY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/parse5-htmlparser2-tree-adapter/download/parse5-htmlparser2-tree-adapter-6.0.1.tgz}
+    name: parse5-htmlparser2-tree-adapter
+    version: 6.0.1
+    dependencies:
+      parse5: registry.nlark.com/parse5/6.0.1
+    dev: false
+
+  registry.nlark.com/parse5/6.0.1:
+    resolution: {integrity: sha1-4aHAhcVps9wIMhGE8Zo5zCf3wws=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/parse5/download/parse5-6.0.1.tgz}
+    name: parse5
+    version: 6.0.1
     dev: false

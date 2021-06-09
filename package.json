@@ -1,19 +1,20 @@
 {
-  "name": "zhihu_collection",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@xialvjun/zhihu_favorites",
+  "version": "0.1.0",
+  "description": "crawl one user's zhihu favorites into a sqlite db file",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["zhihu", "crawler"],
+  "author": "xialvjun@live.com",
+  "repository": "https://github.com/xialvjun/zhihu_favorites",
+  "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.1",
     "better-sqlite3": "^7.1.5",
-    "cheerio": "^1.0.0-rc.6",
-    "got": "^11.8.2",
-    "puppeteer-core": "^9.0.0"
+    "cheerio": "^1.0.0-rc.10"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^5.4.1"

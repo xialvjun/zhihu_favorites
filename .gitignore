@@ -105,4 +105,4 @@ dist
 
 
 db.sqlite3
-config.ts
+# config.ts
